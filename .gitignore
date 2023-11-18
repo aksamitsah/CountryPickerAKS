@@ -10,3 +10,10 @@ DerivedData/
 
 .swiftpm/
 .netrc
+
+Demo/.DS_Store
+Demo/Pods
+Demo/Podfile.lock
+Demo/SampleExample.xcodeproj/project.xcworkspace/xcuserdata
+Demo/SampleExample.xcodeproj/xcuserdata
+Demo/SampleExample.xcworkspace/xcuserdata
