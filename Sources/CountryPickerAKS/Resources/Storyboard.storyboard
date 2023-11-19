@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Country ListVC-->
+        <!--Country Picker-->
         <scene sceneID="zhP-dp-1Ki">
             <objects>
-                <viewController storyboardIdentifier="CountryListVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="own-I7-Ebg" customClass="CountryListVC" customModule="CountryPickerAKS" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CountryPicker" useStoryboardIdentifierAsRestorationIdentifier="YES" id="own-I7-Ebg" customClass="CountryPicker" customModule="CountryPickerAKS" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="heh-Ig-0Nc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -207,7 +207,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

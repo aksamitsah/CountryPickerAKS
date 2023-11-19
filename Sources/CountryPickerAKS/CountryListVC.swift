@@ -1,5 +1,5 @@
 //
-//  CountryListVC.swift
+//  CountryPicker.swift
 //
 //
 //  Created by Amit Shah on 14/11/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class CountryListVC: UIViewController {
+public class CountryPicker: UIViewController {
     
     @IBOutlet private weak var notFoundImgView: UIImageView!
     @IBOutlet private weak var tableview: UIView!
@@ -86,7 +86,7 @@ public class CountryListVC: UIViewController {
         }
     }
     
-    @IBAction public func closeBtnTap(_ sender: Any) {
+    @IBAction private func closeBtnTap(_ sender: Any) {
         
         seacrchCloseBtn.isHidden = true
         searchTf.text = ""
@@ -95,9 +95,9 @@ public class CountryListVC: UIViewController {
         
     }
     
-    public static func open(from viewController: UIViewController, config: Config? = nil ,comp: @escaping (Result<CountryList,CustomError>) -> Void){
+    public static func show(from viewController: UIViewController, config: Config? = nil ,comp: @escaping (Result<CountryList,CustomError>) -> Void){
         
-        if let vc = UIStoryboard(name: "Storyboard", bundle: Bundle._module).instantiateViewController(withIdentifier: "CountryListVC") as? CountryListVC{
+        if let vc = UIStoryboard(name: "Storyboard", bundle: Bundle._module).instantiateViewController(withIdentifier: "CountryPicker") as? CountryPicker{
             
             if let config{
                 vc.config = config
@@ -119,7 +119,7 @@ public class CountryListVC: UIViewController {
     }
 }
 
-extension CountryListVC: UITextFieldDelegate {
+extension CountryPicker: UITextFieldDelegate {
     
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
@@ -141,7 +141,7 @@ extension CountryListVC: UITextFieldDelegate {
     
 }
 
-extension CountryListVC: UITableViewDelegate, UITableViewDataSource {
+extension CountryPicker: UITableViewDelegate, UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         data.count

@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "CountryPickerAKS"
-  spec.version      = "0.2.0"
+  spec.version      = "0.4.0"
   spec.summary      = "Easy-to-Use, Lightweight, and Pure Swift Country Picker"
 
   spec.description  = <<-DESC
@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
                    DESC
 
   spec.homepage     = "https://github.com/aksamitsah/CountryPickerAKS"
-  spec.screenshots  = "https://github.com/aksamitsah/CountryPickerAKS/assets/42860041/bf4ee5ed-3a5c-43fc-a5b8-e811a3ddc29c", "https://github.com/aksamitsah/CountryPickerAKS/assets/42860041/c39dfeb1-fc1d-4150-a4a7-07b63c6fb0c6"
+  spec.screenshots  = "https://github.com/aksamitsah/CountryPickerAKS/assets/42860041/d9df1638-a15a-41c2-9a8c-692302fb73f7","https://github.com/aksamitsah/CountryPickerAKS/assets/42860041/290d8165-447c-478e-930b-6fd2d139e9b0","https://github.com/aksamitsah/CountryPickerAKS/assets/42860041/848783df-17ad-415a-8f68-775ae5940bd2"
 
   spec.license      = "MIT"
 

@@ -31,7 +31,7 @@ extension Foundation.Bundle {
             }
         }
         
-        return Bundle(for: CountryListVC.self)
+        return Bundle(for: CountryPicker.self)
         #endif
     }()
 }

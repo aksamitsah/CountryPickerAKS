@@ -80,25 +80,25 @@ class ViewController: UIViewController {
         switch sender {
         case btn001:
             //Default
-            CountryListVC.open(from: self) { result in
+            CountryPicker.show(from: self) { result in
                 self.updateValue(result: result)
             }
             
         case btn002:
             //Display type update
-            CountryListVC.open(from: self, config: Config(display: ShowContent(Flag: true, CountryName: true))) { result in
+            CountryPicker.show(from: self, config: Config(display: ShowContent(Flag: true, CountryName: true))) { result in
                 self.updateValue(result: result)
             }
             
         case btn003:
             //Text Color Update
-            CountryListVC.open(from: self, config: Config(color: ThemeColor(primary: .systemGray6, secondary: .systemBackground, textColor: .systemBlue))) { result in
+            CountryPicker.show(from: self, config: Config(color: ThemeColor(primary: .systemGray6, secondary: .systemBackground, textColor: .systemBlue))) { result in
                 self.updateValue(result: result)
             }
             
         case btn004:
             //Font Update
-            CountryListVC.open(from: self, config: Config(
+            CountryPicker.show(from: self, config: Config(
                 font: ThemeFont(
                     searchBar: UIFont(name: "Lemonada-Medium", size: 16) ?? UIFont(),
                     countryName: UIFont(name: "Lemonada-Regular", size: 16) ?? UIFont(),
@@ -110,7 +110,7 @@ class ViewController: UIViewController {
             
         case btn005:
             //Show Local Country On Top Off
-            CountryListVC.open(from: self, config: Config(
+            CountryPicker.show(from: self, config: Config(
                 data: CustomizeCountryList(showLocalOnTop: false)
             )) { result in
                 self.updateValue(result: result)
@@ -118,7 +118,7 @@ class ViewController: UIViewController {
             
         case btn006:
             //Update country list Position
-            CountryListVC.open(from: self, config: Config(
+            CountryPicker.show(from: self, config: Config(
                 data: CustomizeCountryList(alterExisting: [
                     .onTopAfterLocal(["NP","US"]),
                     .onTop(["AQ"]),
@@ -130,7 +130,7 @@ class ViewController: UIViewController {
         
         case btn007:
             //Add New country list Position
-            CountryListVC.open(from: self, config: Config(
+            CountryPicker.show(from: self, config: Config(
                 data: CustomizeCountryList(
                     addNew: [
                         CountryList(name: "New Country", dial_code: "+12", emoji: "🫡", code: "NCA"),
