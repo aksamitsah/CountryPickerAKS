@@ -32,6 +32,8 @@ class CountryModelList {
         var onTop = [CountryList]()
         var onBottom = [CountryList]()
         var onTopAfterLocal = [CountryList]()
+        var displayOnly = [String]()
+        var removeOnly = [String]()
 
         for item in config.alterExisting{
             
@@ -44,7 +46,7 @@ class CountryModelList {
                     if let index = countryList.firstIndex(where: { $0.code == ds }) {
                         onTop.append(countryList.remove(at: index))
                     } else {
-                        debugPrint("Country with code '\(ds)' not found in the List")
+                        debugPrint("Not Found: .onTop Country with code '\(ds)' not found in the List")
                     }
                 }
                 
@@ -55,7 +57,7 @@ class CountryModelList {
                     if let index = countryList.firstIndex(where: { $0.code == ds }) {
                         onTopAfterLocal.append(countryList.remove(at: index))
                     } else {
-                        debugPrint("Country with code '\(ds)' not found in the List")
+                        debugPrint("Not Found: .onTopAfterLocal Country with code '\(ds)' not found in the List")
                     }
                 }
             
@@ -66,10 +68,15 @@ class CountryModelList {
                     if let index = countryList.firstIndex(where: { $0.code == ds }) {
                         onBottom.append(countryList.remove(at: index))
                     } else {
-                        debugPrint("Country with code '\(ds)' not found in the List")
+                        debugPrint("Not Found: .onBottom Country with code '\(ds)' not found in the List")
                     }
                     
                 }
+            case .displayOnly(let list): //display only county list
+                displayOnly.append(contentsOf: list)
+            
+            case .removeOnly(let list): //display only county list
+                removeOnly.append(contentsOf: list)
             }
         }
         
@@ -85,6 +92,35 @@ class CountryModelList {
         
         if !onTop.isEmpty{
             countryList.insert(contentsOf: onTop, at: 0)
+        }
+        
+        if !displayOnly.isEmpty {
+            
+            var newList = [CountryList]()
+            
+            for ds in displayOnly{
+                
+                if let index = countryList.firstIndex(where: { $0.code == ds }) {
+                    newList.append(countryList.remove(at: index))
+                } else {
+                    debugPrint("Not Found: .displayOnly Country with code '\(ds)' not found in the List")
+                }
+                
+            }
+            
+            countryList = newList
+        }
+        
+        if !removeOnly.isEmpty {
+            
+            for ds in removeOnly{
+                
+                if let index = countryList.firstIndex(where: { $0.code == ds }) {
+                    countryList.remove(at: index)
+                } else {
+                    debugPrint("Not Found: .removeOnly Country with code '\(ds)' not found in the List")
+                }
+            }
         }
 
         return countryList

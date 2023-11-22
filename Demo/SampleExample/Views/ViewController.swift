@@ -92,7 +92,12 @@ class ViewController: UIViewController {
             
         case btn003:
             //Text Color Update
-            CountryPicker.show(from: self, config: Config(color: ThemeColor(primary: .systemGray6, secondary: .systemBackground, textColor: .systemBlue))) { result in
+            CountryPicker.show(from: self, config: Config(
+                color: ThemeColor(
+                    primary: .systemGray6,
+                    secondary: .systemBackground,
+                    textColor: .systemBlue)
+            )) { result in
                 self.updateValue(result: result)
             }
             
@@ -145,6 +150,23 @@ class ViewController: UIViewController {
             )) { result in
                 self.updateValue(result: result)
             }
+            
+//            CountryPicker.show(from: self, config: Config(
+//                data: CustomizeCountryList(
+//                    addNew: [
+//                        CountryList(name: "New Country", dial_code: "+12", emoji: "🫡", code: "NCA"),
+//                        CountryList(name: "New Country B", dial_code: "+13", emoji: "😵‍💫", code: "NCB")
+//                    ],
+//                    alterExisting: [
+//                        .displayOnly(["NCA","NCB"]),
+//                        .removeOnly(["NCB", "NP"])
+//                    ]
+//                )
+//            )) { result in
+//                self.updateValue(result: result)
+//            }
+            
+            
             
         default: break
             

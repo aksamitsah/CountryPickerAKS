@@ -63,6 +63,153 @@ target 'MyApp' do
 end
 ```
 
+## ⛳️ CountryPickerAKS - Docs
+
+### Defualt
+
+```swift
+import CountryPickerAKS
+
+CountryPicker.show(from: self) { result in
+   switch result {
+       case .success(let data):
+       debugPrint(data)
+       case .failure(let err):
+       debugPrint(err.localizedDescription)
+   }
+}
+```
+
+### A More Advanced Example
+
+With the powerful options, you can accomplish complex tasks with CountryPickerAKS in a simple way. For example, the code below:
+
+- All the parameters have default values. If you want to override them, just pass the params config updated based on your needs.
+
+1. Alter Display Elements
+   - Case: If at least one parameter is required to display, give an error.
+
+```swift
+CountryPicker.show(from: self, config: Config(
+    display: ShowContent(Flag: true, CountryName: true)
+)) { result in
+   switch result {
+       case .success(let data):
+       debugPrint(data)
+       case .failure(let err):
+       debugPrint(err.localizedDescription)
+   }
+}
+```
+
+2. Update Theme
+  - Recommendation: If you use dark mode, then pass both appearances.
+
+```swift
+CountryPicker.show(from: self, config: Config(
+    color: ThemeColor(
+        primary: .systemGray6,
+        secondary: .systemBackground,
+        textColor: .systemBlue)
+)) { result in
+   switch result {
+       case .success(let data):
+       debugPrint(data)
+       case .failure(let err):
+       debugPrint(err.localizedDescription)
+   }
+}
+```
+
+
+3. Update Font
+
+```swift
+CountryPicker.show(from: self, config: Config(
+         font: ThemeFont(
+                searchBar: UIFont(name: "Lemonada-Medium", size: 16) ?? UIFont(),
+                countryName: UIFont(name: "Lemonada-Regular", size: 16) ?? UIFont(),
+                countryCode: UIFont(name: "Lemonada-Light", size: 16) ?? UIFont(),
+                countryFlag: UIFont(name: "Lemonada-Bold", size: 22) ?? UIFont())
+)) { result in
+   switch result {
+       case .success(let data):
+       debugPrint(data)
+       case .failure(let err):
+       debugPrint(err.localizedDescription)
+   }
+}
+```
+
+4. Show/Hide Local Country
+
+```swift
+CountryPicker.show(from: self, config: Config(
+    data: CustomizeCountryList(showLocalOnTop: false)
+)) { result in
+   switch result {
+       case .success(let data):
+       debugPrint(data)
+       case .failure(let err):
+       debugPrint(err.localizedDescription)
+   }
+}
+```
+
+5. Add New Country / Alter Position
+
+```swift
+CountryPicker.show(from: self, config: Config(
+    data: CustomizeCountryList(
+        addNew: [
+            CountryList(name: "New Country", dial_code: "+12", emoji: "🫡", code: "NCA"),
+            CountryList(name: "New Country B", dial_code: "+13", emoji: "😵‍💫", code: "NCB")
+            ],
+        alterExisting: [
+            .onTop(["NCA", "NCB"]),
+            .onTopAfterLocal(["NP"]),
+            .onBottom(["US"])
+            ]
+    )
+)) { result in
+   switch result {
+       case .success(let data):
+       debugPrint(data)
+       case .failure(let err):
+       debugPrint(err.localizedDescription)
+   }
+}
+```
+
+- Use Display Only .displayOnly([code]) Country: Used to display only a list of countries.
+- Use Remove Only .removeOnly([code]) Country: Used to remove a particular country.
+
+```swift
+CountryPicker.show(from: self, config: Config(
+    data: CustomizeCountryList(
+        addNew: [
+            CountryList(name: "New Country", dial_code: "+12", emoji: "🫡", code: "NCA"),
+            CountryList(name: "New Country B", dial_code: "+13", emoji: "😵‍💫", code: "NCB")
+            ],
+        alterExisting: [
+            .onTop(["NCA", "NCB"]),
+            .onTopAfterLocal(["NP"]),
+            .onBottom(["US"]),
+            .displayOnly(["NCA","NCB"]),
+            .removeOnly(["NCB"])
+            ]
+    )
+)) { result in
+   switch result {
+       case .success(let data):
+       debugPrint(data)
+       case .failure(let err):
+       debugPrint(err.localizedDescription)
+   }
+}
+```
+
+
 ## 😳 Requirements
 
 - iOS 11.0+ with support for the latest release, iOS 17

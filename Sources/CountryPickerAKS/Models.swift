@@ -108,6 +108,8 @@ public enum AlterExistingCountryList{
     case onTop([String])
     case onBottom([String])
     case onTopAfterLocal([String])
+    case displayOnly([String])
+    case removeOnly([String])
 }
 
 public struct CustomizeCountryList{
