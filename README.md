@@ -84,10 +84,10 @@ CountryPicker.show(from: self) { result in
 
 With the powerful options, you can accomplish complex tasks with CountryPickerAKS in a simple way. For example, the code below:
 
-- All the parameters have default values. If you want to override them, just pass the params config updated based on your needs.
+- All the parameters have default values. If you want to override them, just pass the params `config` updated based on your needs.
 
 1. Alter Display Elements
-   - Case: If at least one parameter is required to display, give an error.
+- Case: If at least one parameter is required to display, give an error.
 
 ```swift
 CountryPicker.show(from: self, config: Config(
@@ -156,7 +156,7 @@ CountryPicker.show(from: self, config: Config(
 }
 ```
 
-5. Add New Country / Alter Position
+5. Add New Country / Alter Position / Display & Remove Only
 
 ```swift
 CountryPicker.show(from: self, config: Config(
@@ -181,8 +181,8 @@ CountryPicker.show(from: self, config: Config(
 }
 ```
 
-- Use Display Only .displayOnly([code]) Country: Used to display only a list of countries.
-- Use Remove Only .removeOnly([code]) Country: Used to remove a particular country.
+- Use Display Only `.displayOnly([code])` Country: Used to display only a list of countries.
+- Use Remove Only `.removeOnly([code])` Country: Used to remove a particular country.
 
 ```swift
 CountryPicker.show(from: self, config: Config(
