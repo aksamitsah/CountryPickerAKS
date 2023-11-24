@@ -1,16 +1,16 @@
 <div align='center'>
 
-<img src="https://github.com/aksamitsah/CountryPickerAKS/assets/42860041/d9df1638-a15a-41c2-9a8c-692302fb73f7.png"><br><br>
+<a href="#"><img src="https://github.com/aksamitsah/CountryPickerAKS/assets/42860041/d9df1638-a15a-41c2-9a8c-692302fb73f7.png"></a><br><br>
 
- <img src="https://img.shields.io/badge/platform-iOS-blue.svg" alt="Platform: iOS"/>
- <img src="https://img.shields.io/badge/iOS-11%2B-green.svg" alt="iOS 11+"/>
- <img src="https://img.shields.io/badge/Swift-5.0%2B-orange.svg" alt="Swift 5.0+"/>
- <img src="https://img.shields.io/badge/Xcode-14.x%2B-green.svg" alt="XCode 14.x+"/>
- <img src="https://img.shields.io/badge/Release-v0.3.0-blue.svg" alt="tag v0.3.0"/>
- <img src="https://img.shields.io/badge/Doc-Latest-red.svg" alt="tag v0.3.0"/>
- <a href="https://raw.githubusercontent.com/aksamitsah/CountryPickerAKS/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg"></a><br>
+ <a href="#"><img src="https://img.shields.io/badge/platform-iOS-blue.svg" alt="Platform: iOS"/></a>
+ <a href="#"><img src="https://img.shields.io/badge/iOS-11%2B-green.svg" alt="iOS 11+"/></a>
+ <a href="#"><img src="https://img.shields.io/badge/Swift-5.0%2B-orange.svg" alt="Swift 5.0+"/></a>
+ <a href="#"><img src="https://img.shields.io/badge/Xcode-14.x%2B-green.svg" alt="XCode 14.x+"/></a>
+ <a href="#"><img src="https://img.shields.io/badge/Release-v0.6.0-blue.svg"/></a>
+ <a href="https://github.com/aksamitsah/CountryPickerAKS/tree/main#%EF%B8%8F-countrypickeraks---docs"><img src="https://img.shields.io/badge/Doc-Latest-green.svg"/></a>
+ <a href="https://raw.githubusercontent.com/aksamitsah/CountryPickerAKS/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-red.svg"></a><br>
  
- <img src="https://img.shields.io/badge/Swift package manager-compatible-darkgreen.svg" alt="spm compatible"/>
+ <a href="https://swiftpackageindex.com/aksamitsah/CountryPickerAKS"><img src="https://img.shields.io/badge/Swift package manager-compatible-darkgreen.svg" alt="spm compatible"/></a>
  <a href="https://cocoapods.org/pods/CountryPickerAKS"><img src="https://img.shields.io/badge/Cocopod-compatible-darkgreen.svg" alt="Cocopod compatible"/></a><br><br>
 
 </div>
@@ -49,7 +49,7 @@ Give it a ⭐️ if it simplifies your app development!
 
 - File > Swift Packages > Add Package Dependency
 - Add `https://github.com/aksamitsah/CountryPickerAKS.git`
-- Select "Up to Next Major for latest update"
+- Select `Up to Next Major` for latest update
 
 #### CocoaPods
 
