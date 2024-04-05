@@ -15,7 +15,7 @@
 
 </div>
 
-<p>Streamline country selection with ease. Customize themes, add countries, optimize lists – all tailored to your app. A simple, powerful choice for an enhanced user experience. 🌐✨</p>
+<p>Streamline country selection with ease. Customize themes, add countries, and optimize lists – all tailored to your app. A simple, powerful choice for an enhanced user experience. 🌐✨</p>
 
 ## ⛳️ CountryPickerAKS
 
@@ -23,12 +23,12 @@
 
 - [x] Appearance available for both Light and Dark modes
 - [x] Customizable Font to match your App's style for Country, Country Code, and Search
-- [x] Enable or Disable Local Country on Top option
+- [x] Enable or Disable Local Country on the Top option
 - [x] Customizable theme based on your App's primary, secondary, and text colors
 - [x] Add Custom Country if desired
 - [x] Alter Country List according to your preference (Top, Bottom, or After Local Country)
 - [x] Optimized Search based on Country Name (e.g., INDIA), Dial Code (e.g., 91), or Country Code (e.g., IN)
-- [x] Avaiable for Cocoa Pods & Swift package manager
+- [x] Available for Cocoa Pods & Swift package manager
 - [x] Best practices followed
  
 
@@ -65,7 +65,7 @@ end
 
 ## ⛳️ CountryPickerAKS - Docs
 
-### Defualt
+### Default
 
 ```swift
 import CountryPickerAKS
