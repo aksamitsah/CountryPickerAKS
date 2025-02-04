@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "CountryPickerAKS"
-  spec.version      = "0.6.0"
+  spec.version      = "0.7.0"
   spec.summary      = "Easy-to-Use, Lightweight, and Pure Swift Country Picker"
 
   spec.description  = <<-DESC
