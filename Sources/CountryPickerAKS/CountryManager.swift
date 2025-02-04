@@ -5,6 +5,8 @@
 //  Created by Amit Shah on 04/02/2025.
 //
 
+import Foundation
+
 public class CountryManager {
     
     public static let shared: CountryManager = CountryManager()
