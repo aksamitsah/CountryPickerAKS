@@ -128,7 +128,7 @@ class CountryModelList {
     }
 
     func countryList() -> [CountryList] {
-        return dataList()
+        return dataList() ?? []
     }
         
     private func dataList() -> [CountryList]? {
