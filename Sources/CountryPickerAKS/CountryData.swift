@@ -126,6 +126,10 @@ class CountryModelList {
         return countryList
             
     }
+
+    func countryList() -> [CountryList] {
+        return dataList()
+    }
         
     private func dataList() -> [CountryList]? {
         
