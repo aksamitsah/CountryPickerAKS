@@ -82,7 +82,7 @@ CountryPicker.show(from: self) { result in
 ```
 
 ## 🗺️ CountryManager 
-<a href="https://github.com/aksamitsah/CountryPickerAKS/CountryManager.md">
+<a href="https://github.com/aksamitsah/CountryPickerAKS/blob/main/CountryManager.md">
 The CountryManager class provides a convenient way to manage and retrieve country data based on different parameters such as country code, country name, dial code, and country emoji. It is a singleton class, ensuring that there is only one instance of the country data throughout the app.
 </a>
 
