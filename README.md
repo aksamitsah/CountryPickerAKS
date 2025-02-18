@@ -6,12 +6,12 @@
  <a href="#"><img src="https://img.shields.io/badge/iOS-11%2B-green.svg" alt="iOS 11+"/></a>
  <a href="#"><img src="https://img.shields.io/badge/Swift-5.0%2B-orange.svg" alt="Swift 5.0+"/></a>
  <a href="#"><img src="https://img.shields.io/badge/Xcode-14.x%2B-green.svg" alt="XCode 14.x+"/></a>
- <a href="#"><img src="https://img.shields.io/badge/Release-v0.6.0-blue.svg"/></a>
+ <a href="#"><img src="https://img.shields.io/badge/Release-v0.7.0-blue.svg"/></a>
  <a href="https://github.com/aksamitsah/CountryPickerAKS/tree/main#%EF%B8%8F-countrypickeraks---docs"><img src="https://img.shields.io/badge/Doc-Latest-green.svg"/></a>
  <a href="https://raw.githubusercontent.com/aksamitsah/CountryPickerAKS/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-red.svg"></a><br>
  
  <a href="https://swiftpackageindex.com/aksamitsah/CountryPickerAKS"><img src="https://img.shields.io/badge/Swift package manager-compatible-darkgreen.svg" alt="spm compatible"/></a>
- <a href="https://cocoapods.org/pods/CountryPickerAKS"><img src="https://img.shields.io/badge/Cocopod-compatible-darkgreen.svg" alt="Cocopod compatible"/></a><br><br>
+ <a href="https://cocoapods.org/pods/CountryPickerAKS"><img src="https://img.shields.io/badge/Cocoapod-compatible-darkgreen.svg" alt="Cocoapod compatible"/></a><br><br>
 
 </div>
 
@@ -22,6 +22,7 @@
 ## 😳 Features
 
 - [x] Appearance available for both Light and Dark modes
+- [x] CountryManager for more control
 - [x] Customizable Font to match your App's style for Country, Country Code, and Search
 - [x] Enable or Disable Local Country on the Top option
 - [x] Customizable theme based on your App's primary, secondary, and text colors
@@ -79,6 +80,11 @@ CountryPicker.show(from: self) { result in
    }
 }
 ```
+
+## 🗺️ CountryManager 
+<a href="https://github.com/aksamitsah/CountryPickerAKS/CountryManager.md">
+The CountryManager class provides a convenient way to manage and retrieve country data based on different parameters such as country code, country name, dial code, and country emoji. It is a singleton class, ensuring that there is only one instance of the country data throughout the app.
+</a>
 
 ### A More Advanced Example
 
